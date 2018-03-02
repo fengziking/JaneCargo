@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SLd-Wa-bjZ" customClass="JXCancelOrPayView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta3-9p-BBh">
+                    <rect key="frame" x="268" y="13.5" width="92" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="JaH-Tn-ln6"/>
+                        <constraint firstAttribute="height" constant="25" id="iMI-Kx-dBg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <connections>
+                        <action selector="orderpayAction:" destination="SLd-Wa-bjZ" eventType="touchUpInside" id="16X-8b-6H1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-me-3UL">
+                    <rect key="frame" x="166" y="13" width="92" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="151-ow-Npd"/>
+                        <constraint firstAttribute="width" constant="92" id="SL6-Yf-1pm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <connections>
+                        <action selector="ordercancelAction:" destination="SLd-Wa-bjZ" eventType="touchUpInside" id="aNK-2y-ncc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qx-SV-XSS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="tPo-Ek-1X2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ta3-9p-BBh" firstAttribute="centerY" secondItem="SLd-Wa-bjZ" secondAttribute="centerY" id="0Ua-qX-KIX"/>
+                <constraint firstItem="ta3-9p-BBh" firstAttribute="leading" secondItem="7qg-me-3UL" secondAttribute="trailing" constant="10" id="F8X-Wc-7se"/>
+                <constraint firstItem="7qx-SV-XSS" firstAttribute="leading" secondItem="SLd-Wa-bjZ" secondAttribute="leading" id="KSs-H1-OeI"/>
+                <constraint firstItem="7qx-SV-XSS" firstAttribute="top" secondItem="SLd-Wa-bjZ" secondAttribute="top" id="NGW-XI-VcJ"/>
+                <constraint firstAttribute="trailing" secondItem="ta3-9p-BBh" secondAttribute="trailing" constant="15" id="jQb-9M-Eow"/>
+                <constraint firstItem="7qg-me-3UL" firstAttribute="centerY" secondItem="ta3-9p-BBh" secondAttribute="centerY" id="l1m-gt-OHB"/>
+                <constraint firstAttribute="trailing" secondItem="7qx-SV-XSS" secondAttribute="trailing" id="qqr-1c-5j0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="line" destination="7qx-SV-XSS" id="Ula-Y4-evC"/>
+                <outlet property="ordercancelbt" destination="7qg-me-3UL" id="t2n-eY-tg1"/>
+                <outlet property="orderpaybt" destination="ta3-9p-BBh" id="szf-Yi-klb"/>
+            </connections>
+            <point key="canvasLocation" x="-64.5" y="23.5"/>
+        </view>
+    </objects>
+</document>

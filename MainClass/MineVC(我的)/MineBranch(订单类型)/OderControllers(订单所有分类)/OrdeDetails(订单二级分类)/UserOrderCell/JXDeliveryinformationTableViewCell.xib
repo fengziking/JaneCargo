@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="JXDeliveryinformationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_快递信息" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-6R-M3U">
+                        <rect key="frame" x="15" y="13" width="21" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="62k-kp-0Vt"/>
+                            <constraint firstAttribute="width" constant="21" id="cGi-bh-Pac"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_详细" translatesAutoresizingMaskIntoConstraints="NO" id="j0f-Dr-ZKY">
+                        <rect key="frame" x="307" y="24" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="6tZ-0T-FXD"/>
+                            <constraint firstAttribute="height" constant="14" id="Lhr-yt-Dvv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq9-qd-4fn">
+                        <rect key="frame" x="55" y="15" width="0.0" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="3EU-z4-AQe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEQ-sS-DMi">
+                        <rect key="frame" x="55" y="37" width="0.0" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="pfe-61-v2j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uvO-6R-M3U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="APD-we-b9j"/>
+                    <constraint firstItem="IEQ-sS-DMi" firstAttribute="leading" secondItem="yq9-qd-4fn" secondAttribute="leading" id="BhQ-qs-iRB"/>
+                    <constraint firstItem="yq9-qd-4fn" firstAttribute="leading" secondItem="uvO-6R-M3U" secondAttribute="trailing" constant="19" id="UC3-x0-sMK"/>
+                    <constraint firstItem="uvO-6R-M3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="VtZ-so-Oeu"/>
+                    <constraint firstItem="yq9-qd-4fn" firstAttribute="centerY" secondItem="uvO-6R-M3U" secondAttribute="centerY" id="WOk-m9-4u3"/>
+                    <constraint firstAttribute="trailing" secondItem="j0f-Dr-ZKY" secondAttribute="trailing" constant="15" id="asW-E3-NPj"/>
+                    <constraint firstItem="j0f-Dr-ZKY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fDI-nr-oAa"/>
+                    <constraint firstItem="IEQ-sS-DMi" firstAttribute="top" secondItem="yq9-qd-4fn" secondAttribute="bottom" constant="8" id="gra-P7-8UH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deliverVeryLabel" destination="yq9-qd-4fn" id="ftc-bZ-rFp"/>
+                <outlet property="timeLabel" destination="IEQ-sS-DMi" id="BnN-hY-mkz"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="61"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_快递信息" width="21" height="18"/>
+        <image name="icon_详细" width="8" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="JXNewProductHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3K-jg-17l">
+                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="107.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_新品" translatesAutoresizingMaskIntoConstraints="NO" id="uQc-k0-Rim">
+                                <rect key="frame" x="43.5" y="11" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="16p-EZ-l9b"/>
+                                    <constraint firstAttribute="width" constant="48" id="F2Z-49-yMN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om3-Zk-Etg">
+                                <rect key="frame" x="55" y="66" width="25" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="t3A-t1-HDM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udq-n2-7xh">
+                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="107.5"/>
+                                <connections>
+                                    <action selector="newbtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yLN-HC-8Ls"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uQc-k0-Rim" firstAttribute="centerX" secondItem="h3K-jg-17l" secondAttribute="centerX" id="FhY-cy-O2c"/>
+                            <constraint firstItem="Om3-Zk-Etg" firstAttribute="centerX" secondItem="h3K-jg-17l" secondAttribute="centerX" id="GsJ-f8-7sa"/>
+                            <constraint firstItem="udq-n2-7xh" firstAttribute="top" secondItem="h3K-jg-17l" secondAttribute="top" id="Hg7-nE-lRC"/>
+                            <constraint firstAttribute="bottom" secondItem="udq-n2-7xh" secondAttribute="bottom" id="Ksv-NN-cyh"/>
+                            <constraint firstItem="Om3-Zk-Etg" firstAttribute="top" secondItem="uQc-k0-Rim" secondAttribute="bottom" constant="7" id="Rss-CJ-5gk"/>
+                            <constraint firstItem="udq-n2-7xh" firstAttribute="leading" secondItem="h3K-jg-17l" secondAttribute="leading" id="YXN-lT-J8g"/>
+                            <constraint firstAttribute="trailing" secondItem="udq-n2-7xh" secondAttribute="trailing" id="kEO-yE-Uxh"/>
+                            <constraint firstItem="uQc-k0-Rim" firstAttribute="top" secondItem="h3K-jg-17l" secondAttribute="top" constant="11" id="uXx-Xc-n4f"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVu-lp-6Fi">
+                        <rect key="frame" x="134.5" y="0.0" width="134.5" height="107.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_热销商品" translatesAutoresizingMaskIntoConstraints="NO" id="6md-f1-kBx">
+                                <rect key="frame" x="43" y="11" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="J1a-af-kGL"/>
+                                    <constraint firstAttribute="width" constant="48" id="mK3-Jf-XiN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热销" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-U6-NjE">
+                                <rect key="frame" x="55.5" y="66" width="25" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="8WD-oH-PFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksB-EL-ovm">
+                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="107.5"/>
+                                <connections>
+                                    <action selector="cakesbtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6XM-4d-RsE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ksB-EL-ovm" secondAttribute="trailing" id="4Np-rr-u2A"/>
+                            <constraint firstItem="ksB-EL-ovm" firstAttribute="top" secondItem="IVu-lp-6Fi" secondAttribute="top" id="CbL-jf-uIF"/>
+                            <constraint firstAttribute="bottom" secondItem="ksB-EL-ovm" secondAttribute="bottom" id="Lu6-4B-gRV"/>
+                            <constraint firstItem="6md-f1-kBx" firstAttribute="top" secondItem="IVu-lp-6Fi" secondAttribute="top" constant="11" id="W4e-8h-pk8"/>
+                            <constraint firstItem="6md-f1-kBx" firstAttribute="centerX" secondItem="IVu-lp-6Fi" secondAttribute="centerX" id="YBf-Xg-9w3"/>
+                            <constraint firstItem="ksB-EL-ovm" firstAttribute="leading" secondItem="IVu-lp-6Fi" secondAttribute="leading" id="bYI-l8-qVX"/>
+                            <constraint firstItem="Oe9-U6-NjE" firstAttribute="centerX" secondItem="IVu-lp-6Fi" secondAttribute="centerX" id="re8-t1-G8F"/>
+                            <constraint firstItem="Oe9-U6-NjE" firstAttribute="top" secondItem="6md-f1-kBx" secondAttribute="bottom" constant="7" id="x40-E1-j18"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yN1-tW-1qe">
+                        <rect key="frame" x="269" y="0.0" width="134.5" height="107.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_极惠商品" translatesAutoresizingMaskIntoConstraints="NO" id="dJl-Ay-d6p">
+                                <rect key="frame" x="43" y="11" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2Au-Dy-EcD"/>
+                                    <constraint firstAttribute="width" constant="48" id="Zko-r1-8Li"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="极惠商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuS-6n-QOh">
+                                <rect key="frame" x="42.5" y="66" width="49.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="dFm-8j-7CZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-qc-Eh7">
+                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="107.5"/>
+                                <connections>
+                                    <action selector="huibtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4us-4Q-9Lx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FYb-qc-Eh7" firstAttribute="leading" secondItem="yN1-tW-1qe" secondAttribute="leading" id="0qY-rz-j20"/>
+                            <constraint firstItem="TuS-6n-QOh" firstAttribute="top" secondItem="dJl-Ay-d6p" secondAttribute="bottom" constant="7" id="1t3-3O-jmM"/>
+                            <constraint firstAttribute="trailing" secondItem="FYb-qc-Eh7" secondAttribute="trailing" id="KUg-c0-PmC"/>
+                            <constraint firstItem="FYb-qc-Eh7" firstAttribute="top" secondItem="yN1-tW-1qe" secondAttribute="top" id="X8C-YN-x18"/>
+                            <constraint firstItem="dJl-Ay-d6p" firstAttribute="top" secondItem="yN1-tW-1qe" secondAttribute="top" constant="11" id="geL-Oe-Xkf"/>
+                            <constraint firstAttribute="bottom" secondItem="FYb-qc-Eh7" secondAttribute="bottom" id="iTk-dk-86V"/>
+                            <constraint firstItem="TuS-6n-QOh" firstAttribute="centerX" secondItem="yN1-tW-1qe" secondAttribute="centerX" id="pJp-An-S0w"/>
+                            <constraint firstItem="dJl-Ay-d6p" firstAttribute="centerX" secondItem="yN1-tW-1qe" secondAttribute="centerX" id="zEy-Yf-GJ6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yN1-tW-1qe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="208-cd-qqK"/>
+                    <constraint firstItem="yN1-tW-1qe" firstAttribute="leading" secondItem="IVu-lp-6Fi" secondAttribute="trailing" id="3ez-Wd-uwR"/>
+                    <constraint firstAttribute="bottom" secondItem="h3K-jg-17l" secondAttribute="bottom" id="Gsl-lK-m3c"/>
+                    <constraint firstItem="yN1-tW-1qe" firstAttribute="width" secondItem="IVu-lp-6Fi" secondAttribute="width" id="PhH-5R-G0d"/>
+                    <constraint firstItem="h3K-jg-17l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QmY-xM-Efn"/>
+                    <constraint firstItem="IVu-lp-6Fi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="T1B-Pb-FTe"/>
+                    <constraint firstItem="h3K-jg-17l" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:3" id="XnT-H7-B0u"/>
+                    <constraint firstItem="h3K-jg-17l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a66-8U-Xck"/>
+                    <constraint firstItem="IVu-lp-6Fi" firstAttribute="height" secondItem="h3K-jg-17l" secondAttribute="height" id="aMk-Yr-Q86"/>
+                    <constraint firstItem="yN1-tW-1qe" firstAttribute="height" secondItem="IVu-lp-6Fi" secondAttribute="height" id="atS-82-oTZ"/>
+                    <constraint firstItem="IVu-lp-6Fi" firstAttribute="leading" secondItem="h3K-jg-17l" secondAttribute="trailing" id="pNU-Sq-7gC"/>
+                    <constraint firstItem="IVu-lp-6Fi" firstAttribute="width" secondItem="h3K-jg-17l" secondAttribute="width" id="zdj-wd-1Gf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cakesbt" destination="ksB-EL-ovm" id="9ph-Ti-LQD"/>
+                <outlet property="cakeslabel" destination="Oe9-U6-NjE" id="NlD-Jl-olm"/>
+                <outlet property="huibt" destination="FYb-qc-Eh7" id="h6o-3Y-UCp"/>
+                <outlet property="huilabel" destination="TuS-6n-QOh" id="PPR-Fa-PTF"/>
+                <outlet property="newgoodLabel" destination="Om3-Zk-Etg" id="psv-Dh-YiW"/>
+                <outlet property="newgoodbt" destination="udq-n2-7xh" id="NCm-06-pxp"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_新品" width="48" height="48"/>
+        <image name="icon_极惠商品" width="48" height="48"/>
+        <image name="icon_热销商品" width="48" height="48"/>
+    </resources>
+</document>

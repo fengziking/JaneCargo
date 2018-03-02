@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JXHomePageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vbZ-Tw-fTd">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="130"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长白山正宗野生特产特特产灵芝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn1-QX-Dsq">
+                        <rect key="frame" x="10" y="138" width="188" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="PWa-cI-61f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 6.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTf-9M-D7X">
+                        <rect key="frame" x="10" y="158" width="50" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="wAX-rG-3VW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 5.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndS-oP-1Xd">
+                        <rect key="frame" x="68" y="165" width="28.5" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="5LE-Gg-5T4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAn-3z-7lx">
+                        <rect key="frame" x="68" y="169" width="28.5" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="PYk-tb-rBp"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFH-di-yE9">
+                        <rect key="frame" x="158" y="6" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6ZX-yL-Ay2"/>
+                            <constraint firstAttribute="height" constant="40" id="PkL-i4-Gir"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gq5-nf-5Gk" userLabel="line1">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Wzu-oe-7JX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ssl-Mq-DmP" userLabel="line2">
+                        <rect key="frame" x="-0.5" y="1" width="0.5" height="182"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="wfk-jK-0EW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="aFH-di-yE9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="48u-3r-Dk9"/>
+                <constraint firstAttribute="trailing" secondItem="vbZ-Tw-fTd" secondAttribute="trailing" id="4v3-60-hYR"/>
+                <constraint firstItem="Gq5-nf-5Gk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7Kf-MJ-bWK"/>
+                <constraint firstItem="bAn-3z-7lx" firstAttribute="width" secondItem="ndS-oP-1Xd" secondAttribute="width" id="AbK-ow-hSf"/>
+                <constraint firstAttribute="trailing" secondItem="Gq5-nf-5Gk" secondAttribute="trailing" id="B4v-EZ-Gtb"/>
+                <constraint firstItem="tTf-9M-D7X" firstAttribute="top" secondItem="qn1-QX-Dsq" secondAttribute="bottom" constant="8" id="GOl-jZ-MBm"/>
+                <constraint firstItem="vbZ-Tw-fTd" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="71:100" id="H8C-on-YgD"/>
+                <constraint firstItem="Gq5-nf-5Gk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hjr-b3-lK4"/>
+                <constraint firstItem="Ssl-Mq-DmP" firstAttribute="top" secondItem="Gq5-nf-5Gk" secondAttribute="bottom" id="MFV-DW-6z9"/>
+                <constraint firstAttribute="trailing" secondItem="aFH-di-yE9" secondAttribute="trailing" constant="10" id="OoN-s1-3nr"/>
+                <constraint firstAttribute="bottom" secondItem="Ssl-Mq-DmP" secondAttribute="bottom" id="PMA-0S-KF3"/>
+                <constraint firstAttribute="trailing" secondItem="qn1-QX-Dsq" secondAttribute="trailing" constant="10" id="aIe-zt-8Pv"/>
+                <constraint firstItem="tTf-9M-D7X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eXO-Ll-6L5"/>
+                <constraint firstItem="vbZ-Tw-fTd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f5w-MZ-hQ4"/>
+                <constraint firstItem="bAn-3z-7lx" firstAttribute="leading" secondItem="tTf-9M-D7X" secondAttribute="trailing" constant="8" id="hgs-jc-XCb"/>
+                <constraint firstItem="ndS-oP-1Xd" firstAttribute="leading" secondItem="tTf-9M-D7X" secondAttribute="trailing" constant="8" id="iqp-lr-dBE"/>
+                <constraint firstItem="vbZ-Tw-fTd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kEL-p4-WWc"/>
+                <constraint firstItem="qn1-QX-Dsq" firstAttribute="top" secondItem="vbZ-Tw-fTd" secondAttribute="bottom" constant="8" id="p1U-ci-cDg"/>
+                <constraint firstItem="Ssl-Mq-DmP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rIF-bK-DFv"/>
+                <constraint firstItem="bAn-3z-7lx" firstAttribute="centerY" secondItem="ndS-oP-1Xd" secondAttribute="centerY" id="vBP-IV-jPr"/>
+                <constraint firstItem="ndS-oP-1Xd" firstAttribute="top" secondItem="qn1-QX-Dsq" secondAttribute="bottom" constant="15" id="yMU-x7-el7"/>
+                <constraint firstItem="qn1-QX-Dsq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="zaM-lC-8cb"/>
+            </constraints>
+            <size key="customSize" width="208" height="183"/>
+            <connections>
+                <outlet property="discountImage" destination="aFH-di-yE9" id="6dV-pX-F4X"/>
+                <outlet property="discountLabel" destination="ndS-oP-1Xd" id="zlm-re-Aa2"/>
+                <outlet property="iconImage" destination="vbZ-Tw-fTd" id="drI-zC-5Gw"/>
+                <outlet property="lineLView" destination="bAn-3z-7lx" id="PB2-7T-vio"/>
+                <outlet property="linecolor" destination="Gq5-nf-5Gk" id="adO-Zi-5YG"/>
+                <outlet property="linecolors" destination="Ssl-Mq-DmP" id="hDq-xd-Cxh"/>
+                <outlet property="priceLabel" destination="tTf-9M-D7X" id="cQJ-YG-x3f"/>
+                <outlet property="titleLabel" destination="qn1-QX-Dsq" id="Z0R-k3-u96"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="123"/>
+        </collectionViewCell>
+    </objects>
+</document>

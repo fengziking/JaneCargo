@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="JXChecklogisticssTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbA-tN-3iZ">
+                        <rect key="frame" x="19" y="0.0" width="1" height="42.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="G7I-kg-eXl"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsk-48-cx6">
+                        <rect key="frame" x="19" y="48" width="1" height="42.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="RDW-DY-0NT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPn-Nr-cpl">
+                        <rect key="frame" x="50" y="11" width="326" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGA-ga-3Ve">
+                        <rect key="frame" x="50" y="34" width="31" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="zuO-La-BZc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jV6-Dy-lEP">
+                        <rect key="frame" x="50" y="90" width="338" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="lsw-hY-iPR"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NTO-sR-C2c">
+                        <rect key="frame" x="14" y="39.5" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="0go-as-fGe"/>
+                            <constraint firstAttribute="width" constant="12" id="cHe-4F-o3G"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_物流经过状态" translatesAutoresizingMaskIntoConstraints="NO" id="Apy-Gp-4k7">
+                        <rect key="frame" x="17" y="42.5" width="6" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="XNV-S5-tAH"/>
+                            <constraint firstAttribute="width" constant="6" id="qcJ-o6-UjA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NTO-sR-C2c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2os-39-E0l"/>
+                    <constraint firstItem="jV6-Dy-lEP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="3Gu-jd-4VP"/>
+                    <constraint firstItem="hbA-tN-3iZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7CK-hd-WMh"/>
+                    <constraint firstItem="NTO-sR-C2c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="EFB-qA-jbi"/>
+                    <constraint firstItem="hbA-tN-3iZ" firstAttribute="centerX" secondItem="Apy-Gp-4k7" secondAttribute="centerX" id="I4N-CJ-aWw"/>
+                    <constraint firstItem="Apy-Gp-4k7" firstAttribute="centerX" secondItem="NTO-sR-C2c" secondAttribute="centerX" id="N0G-JH-Rgt"/>
+                    <constraint firstItem="rGA-ga-3Ve" firstAttribute="top" secondItem="cPn-Nr-cpl" secondAttribute="bottom" constant="6" id="OV6-26-exC"/>
+                    <constraint firstItem="Tsk-48-cx6" firstAttribute="top" secondItem="Apy-Gp-4k7" secondAttribute="bottom" id="PZk-78-t0G"/>
+                    <constraint firstAttribute="trailing" secondItem="jV6-Dy-lEP" secondAttribute="trailing" id="RZ1-3K-P1c"/>
+                    <constraint firstItem="Tsk-48-cx6" firstAttribute="centerX" secondItem="Apy-Gp-4k7" secondAttribute="centerX" id="TTo-nc-Uca"/>
+                    <constraint firstAttribute="bottom" secondItem="jV6-Dy-lEP" secondAttribute="bottom" id="dRP-T9-fz8"/>
+                    <constraint firstItem="cPn-Nr-cpl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="eh7-2H-MVq"/>
+                    <constraint firstAttribute="trailing" secondItem="cPn-Nr-cpl" secondAttribute="trailing" constant="12" id="h8l-5Q-RWg"/>
+                    <constraint firstItem="rGA-ga-3Ve" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="iMN-aG-Wyx"/>
+                    <constraint firstItem="Apy-Gp-4k7" firstAttribute="top" secondItem="hbA-tN-3iZ" secondAttribute="bottom" id="oUa-j7-sfI"/>
+                    <constraint firstItem="cPn-Nr-cpl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="s6V-W3-l2K"/>
+                    <constraint firstItem="Apy-Gp-4k7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ynK-Og-csd"/>
+                    <constraint firstAttribute="bottom" secondItem="Tsk-48-cx6" secondAttribute="bottom" id="zmT-jg-ZUq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigImage" destination="NTO-sR-C2c" id="k4s-lD-DTF"/>
+                <outlet property="bottomLine" destination="Tsk-48-cx6" id="FXC-wx-1a8"/>
+                <outlet property="contentLabel" destination="cPn-Nr-cpl" id="hBs-n2-rH0"/>
+                <outlet property="line" destination="jV6-Dy-lEP" id="2K6-Uk-z0c"/>
+                <outlet property="smallImage" destination="Apy-Gp-4k7" id="cFY-q0-W6z"/>
+                <outlet property="timeLabel" destination="rGA-ga-3Ve" id="F9r-jt-k3G"/>
+                <outlet property="topLine" destination="hbA-tN-3iZ" id="q1x-DC-eYP"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="78"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_物流经过状态" width="6" height="6"/>
+    </resources>
+</document>

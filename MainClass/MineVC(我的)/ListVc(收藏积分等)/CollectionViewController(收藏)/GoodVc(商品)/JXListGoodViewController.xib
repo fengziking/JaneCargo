@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JXListGoodViewController">
+            <connections>
+                <outlet property="goodsbt" destination="CtH-gJ-lSC" id="hdX-nU-JZr"/>
+                <outlet property="line" destination="YlY-6r-0uI" id="QAn-L8-xIx"/>
+                <outlet property="pricebt" destination="inu-6f-IbM" id="U79-uc-c7w"/>
+                <outlet property="promotionbt" destination="9Vd-1Y-j5c" id="mub-PB-2KN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtH-gJ-lSC">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mit-13-mKS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="全部商品">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goodsAction:" destination="-1" eventType="touchUpInside" id="XqX-Fz-dIO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inu-6f-IbM">
+                    <rect key="frame" x="250" y="0.0" width="125" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YVL-yV-FIh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="降价商品">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="priceAction:" destination="-1" eventType="touchUpInside" id="BAs-4a-yZU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlY-6r-0uI">
+                    <rect key="frame" x="0.0" y="44" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="3sE-08-pqZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vd-1Y-j5c">
+                    <rect key="frame" x="125" y="0.0" width="125" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="zTH-GB-exI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="促销商品">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="promotionAction:" destination="-1" eventType="touchUpInside" id="a9O-ZN-nLq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Vd-1Y-j5c" firstAttribute="width" secondItem="CtH-gJ-lSC" secondAttribute="width" id="54p-XO-dtq"/>
+                <constraint firstAttribute="trailing" secondItem="YlY-6r-0uI" secondAttribute="trailing" id="A8T-W8-NlT"/>
+                <constraint firstItem="inu-6f-IbM" firstAttribute="leading" secondItem="9Vd-1Y-j5c" secondAttribute="trailing" id="DQY-K2-ukc"/>
+                <constraint firstItem="CtH-gJ-lSC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EKf-Hc-bZU"/>
+                <constraint firstItem="CtH-gJ-lSC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:3" id="Fq8-eA-WL7"/>
+                <constraint firstItem="YlY-6r-0uI" firstAttribute="top" secondItem="inu-6f-IbM" secondAttribute="bottom" id="I7o-fy-65m"/>
+                <constraint firstItem="9Vd-1Y-j5c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nlh-Ys-2U6"/>
+                <constraint firstItem="YlY-6r-0uI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RLG-0B-1Wu"/>
+                <constraint firstItem="CtH-gJ-lSC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UEI-Gu-41K"/>
+                <constraint firstItem="inu-6f-IbM" firstAttribute="width" secondItem="9Vd-1Y-j5c" secondAttribute="width" id="UUj-rg-9u4"/>
+                <constraint firstItem="9Vd-1Y-j5c" firstAttribute="leading" secondItem="CtH-gJ-lSC" secondAttribute="trailing" id="ubD-KD-AwN"/>
+                <constraint firstItem="inu-6f-IbM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uuk-PL-SwA"/>
+            </constraints>
+            <point key="canvasLocation" x="-953" y="-79"/>
+        </view>
+    </objects>
+</document>

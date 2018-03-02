@@ -1,0 +1,36 @@
+//
+//  JxJane.pch
+//  JaneCargo
+//
+//  Created by 鹏 on 17/6/23.
+//  Copyright © 2017年 鹏. All rights reserved.
+//
+
+#ifndef JxJane_pch
+#define JxJane_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//#ifdef __OBJC__
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//
+//
+//#endif
+
+
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "HeaderClassFile.h"
+#import "HeaderSizeFrame.h"
+#import "HeaderColor.h"
+#import "HeaderMethod.h"
+
+// 配置所有控制器主页
+static NSString *const GOTO_MAIN_VIEWCONTROLLERS_NOTIFICATION = @"GOTO_MAIN_VIEWCONTROLLERS_NOTIFICATION";
+
+
+#endif /* JxJane_pch */

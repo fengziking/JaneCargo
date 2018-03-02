@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EvaluationServiceCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fad-O7-wfm">
+                        <rect key="frame" x="15" y="15" width="0.0" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="A6p-bG-MTc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5r-vU-aqa">
+                        <rect key="frame" x="100" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Aau-Pi-ED2"/>
+                            <constraint firstAttribute="width" constant="20" id="RHd-7U-34O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" image="img_评论星星灰色">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fbtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="q8D-4t-cDM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixp-pT-ycS">
+                        <rect key="frame" x="133" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2x1-3J-SHy"/>
+                            <constraint firstAttribute="width" constant="20" id="gk2-TE-Ojn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" image="img_评论星星灰色">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="sbtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0Ns-3e-mOa"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-7l-XcK">
+                        <rect key="frame" x="166" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3rX-WC-Hnh"/>
+                            <constraint firstAttribute="width" constant="20" id="vLp-yN-DpW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" image="img_评论星星灰色">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="tbtAcion:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bRl-uR-z7v"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jx-oe-CK9">
+                        <rect key="frame" x="199" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="RoE-Sc-YUq"/>
+                            <constraint firstAttribute="height" constant="20" id="TCQ-Xb-JXh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" image="img_评论星星灰色">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fbtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bIT-ko-tbs"/>
+                            <action selector="fobAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RtC-Nd-Ng8"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyM-JW-0BW">
+                        <rect key="frame" x="305" y="16.5" width="0.0" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Ua0-6t-HOU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jog-cA-MRD">
+                        <rect key="frame" x="232" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="721-xX-rbU"/>
+                            <constraint firstAttribute="height" constant="20" id="fO4-J1-ovs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" image="img_评论星星灰色">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fibtAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rYQ-QR-kvJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aEw-7l-XcK" firstAttribute="leading" secondItem="Ixp-pT-ycS" secondAttribute="trailing" constant="13" id="1he-cP-r7R"/>
+                    <constraint firstItem="Ixp-pT-ycS" firstAttribute="centerY" secondItem="c5r-vU-aqa" secondAttribute="centerY" id="2bl-b8-ofj"/>
+                    <constraint firstItem="oyM-JW-0BW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AtU-k7-7Y2"/>
+                    <constraint firstItem="1jx-oe-CK9" firstAttribute="centerY" secondItem="aEw-7l-XcK" secondAttribute="centerY" id="Ecl-dj-OFH"/>
+                    <constraint firstItem="1jx-oe-CK9" firstAttribute="leading" secondItem="aEw-7l-XcK" secondAttribute="trailing" constant="13" id="Gc4-eO-ap6"/>
+                    <constraint firstItem="fad-O7-wfm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LUD-rT-lD0"/>
+                    <constraint firstItem="fad-O7-wfm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Odd-nT-nYm"/>
+                    <constraint firstItem="jog-cA-MRD" firstAttribute="centerY" secondItem="1jx-oe-CK9" secondAttribute="centerY" id="Zt2-bu-gfM"/>
+                    <constraint firstItem="jog-cA-MRD" firstAttribute="leading" secondItem="1jx-oe-CK9" secondAttribute="trailing" constant="13" id="dYk-Af-XTg"/>
+                    <constraint firstItem="c5r-vU-aqa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="e5W-8I-9uQ"/>
+                    <constraint firstItem="aEw-7l-XcK" firstAttribute="centerY" secondItem="Ixp-pT-ycS" secondAttribute="centerY" id="g36-m4-2y5"/>
+                    <constraint firstItem="c5r-vU-aqa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pUH-aB-l85"/>
+                    <constraint firstItem="Ixp-pT-ycS" firstAttribute="leading" secondItem="c5r-vU-aqa" secondAttribute="trailing" constant="13" id="vPH-zd-mZJ"/>
+                    <constraint firstAttribute="trailing" secondItem="oyM-JW-0BW" secondAttribute="trailing" constant="15" id="yc5-cH-t80"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="evaluationLabel" destination="oyM-JW-0BW" id="INM-PL-oN7"/>
+                <outlet property="fbt" destination="c5r-vU-aqa" id="7tC-By-h2a"/>
+                <outlet property="fibt" destination="jog-cA-MRD" id="grb-mZ-YR6"/>
+                <outlet property="fobt" destination="1jx-oe-CK9" id="eVf-9y-7IY"/>
+                <outlet property="sbt" destination="Ixp-pT-ycS" id="vEe-40-VdF"/>
+                <outlet property="tbt" destination="aEw-7l-XcK" id="Vrq-Fd-Xyg"/>
+                <outlet property="titleLabel" destination="fad-O7-wfm" id="fYE-yq-7k6"/>
+            </connections>
+            <point key="canvasLocation" x="-336" y="55"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_评论星星灰色" width="20" height="20"/>
+    </resources>
+</document>

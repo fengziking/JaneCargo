@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JXFourBtCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-C6-ZHE">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="114"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mVC-af-FLL">
+                        <rect key="frame" x="31" y="11" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="6yz-OF-nAH"/>
+                            <constraint firstAttribute="height" constant="48" id="yPy-Oh-9Yx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAo-FS-5rw">
+                        <rect key="frame" x="42.5" y="66.5" width="25" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cjw-C6-ZHE" secondAttribute="bottom" id="AZO-U8-fye"/>
+                <constraint firstAttribute="trailing" secondItem="Cjw-C6-ZHE" secondAttribute="trailing" id="Hdx-Cy-WP2"/>
+                <constraint firstItem="Cjw-C6-ZHE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IkL-d4-nny"/>
+                <constraint firstItem="Cjw-C6-ZHE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NqE-PC-7kE"/>
+                <constraint firstItem="VAo-FS-5rw" firstAttribute="centerX" secondItem="mVC-af-FLL" secondAttribute="centerX" id="g5j-SF-f3C"/>
+                <constraint firstItem="mVC-af-FLL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hQR-pX-VFN"/>
+                <constraint firstItem="mVC-af-FLL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="lrv-Go-oKF"/>
+                <constraint firstItem="VAo-FS-5rw" firstAttribute="top" secondItem="mVC-af-FLL" secondAttribute="bottom" constant="7.5" id="yw7-GJ-Gin"/>
+            </constraints>
+            <size key="customSize" width="110" height="114"/>
+            <connections>
+                <outlet property="iconImage" destination="mVC-af-FLL" id="HTF-QH-X1d"/>
+                <outlet property="nameLabel" destination="VAo-FS-5rw" id="RKm-en-ahf"/>
+            </connections>
+            <point key="canvasLocation" x="-270" y="217"/>
+        </collectionViewCell>
+    </objects>
+</document>

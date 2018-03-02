@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="JXMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="230.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年6月23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6T2-jm-aIR">
+                        <rect key="frame" x="180.5" y="15" width="74.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FOi-f8-f62"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poa-lK-Z3i">
+                        <rect key="frame" x="15" y="47" width="405" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是弹幕君" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcK-Yk-egz">
+                                <rect key="frame" x="12" y="14" width="92" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Lml-yw-PSe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ReG-GQ-VeC">
+                                <rect key="frame" x="12" y="46" width="59" height="59"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="1Lu-eZ-1fI"/>
+                                    <constraint firstAttribute="height" constant="59" id="PuI-7c-RPO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吉林刚开始付费让女发广告吉林刚开始付费让女发广告吉林刚开始付费让女发广告吉林刚开始付费让女发广告" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-6R-WVJ">
+                                <rect key="frame" x="91" y="50" width="302" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XcK-Yk-egz" firstAttribute="top" secondItem="poa-lK-Z3i" secondAttribute="top" constant="14" id="3mI-uf-xdT"/>
+                            <constraint firstItem="ReG-GQ-VeC" firstAttribute="top" secondItem="XcK-Yk-egz" secondAttribute="bottom" constant="14" id="5SF-fg-J0H"/>
+                            <constraint firstAttribute="height" constant="120" id="IGC-5C-THk"/>
+                            <constraint firstItem="Vfr-6R-WVJ" firstAttribute="top" secondItem="XcK-Yk-egz" secondAttribute="bottom" constant="18" id="TNW-m0-2Ii"/>
+                            <constraint firstItem="ReG-GQ-VeC" firstAttribute="leading" secondItem="poa-lK-Z3i" secondAttribute="leading" constant="12" id="dS0-fa-0iI"/>
+                            <constraint firstItem="XcK-Yk-egz" firstAttribute="leading" secondItem="poa-lK-Z3i" secondAttribute="leading" constant="12" id="iei-xe-5Pm"/>
+                            <constraint firstItem="Vfr-6R-WVJ" firstAttribute="leading" secondItem="ReG-GQ-VeC" secondAttribute="trailing" constant="20" id="m0e-pL-hVu"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfr-6R-WVJ" secondAttribute="trailing" constant="12" id="zXa-d2-wRZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="poa-lK-Z3i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XQ3-qI-ysi"/>
+                    <constraint firstItem="poa-lK-Z3i" firstAttribute="top" secondItem="6T2-jm-aIR" secondAttribute="bottom" constant="12" id="cZJ-RW-01f"/>
+                    <constraint firstItem="6T2-jm-aIR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="fN8-HR-Bgf"/>
+                    <constraint firstAttribute="trailing" secondItem="poa-lK-Z3i" secondAttribute="trailing" constant="15" id="m1u-7X-XkZ"/>
+                    <constraint firstItem="6T2-jm-aIR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qx0-3f-5W9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="poa-lK-Z3i" id="YQ1-Gk-Cnt"/>
+                <outlet property="contentLabel" destination="Vfr-6R-WVJ" id="UHa-dc-oCA"/>
+                <outlet property="iconImage" destination="ReG-GQ-VeC" id="PU4-3w-gcr"/>
+                <outlet property="timeLabel" destination="6T2-jm-aIR" id="zNM-Wz-FSZ"/>
+                <outlet property="titleLabel" destination="XcK-Yk-egz" id="7r0-i6-wK7"/>
+            </connections>
+            <point key="canvasLocation" x="-488" y="113"/>
+        </tableViewCell>
+    </objects>
+</document>

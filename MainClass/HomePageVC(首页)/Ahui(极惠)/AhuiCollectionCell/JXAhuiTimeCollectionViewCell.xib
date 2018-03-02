@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JXAhuiTimeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUU-mX-T7O">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="91"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_panicBuying" translatesAutoresizingMaskIntoConstraints="NO" id="EBS-xi-uFy">
+                                <rect key="frame" x="15" y="36" width="13" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="Ivi-cs-QpI"/>
+                                    <constraint firstAttribute="height" constant="19" id="mgM-lQ-MVl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抢购 · 极惠商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpk-Lk-lEn">
+                                <rect key="frame" x="33" y="35" width="111" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gk8-Xf-nh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EBS-xi-uFy" firstAttribute="centerY" secondItem="bUU-mX-T7O" secondAttribute="centerY" id="7ii-nB-PGj"/>
+                            <constraint firstItem="EBS-xi-uFy" firstAttribute="leading" secondItem="bUU-mX-T7O" secondAttribute="leading" constant="15" id="Bt5-Om-PGn"/>
+                            <constraint firstItem="kpk-Lk-lEn" firstAttribute="centerY" secondItem="EBS-xi-uFy" secondAttribute="centerY" id="gtQ-b3-Cd9"/>
+                            <constraint firstItem="kpk-Lk-lEn" firstAttribute="leading" secondItem="EBS-xi-uFy" secondAttribute="trailing" constant="5" id="wTW-Oo-Ng8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bUU-mX-T7O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WBq-Na-jjU"/>
+                <constraint firstAttribute="trailing" secondItem="bUU-mX-T7O" secondAttribute="trailing" id="aX5-Xq-8zi"/>
+                <constraint firstAttribute="bottom" secondItem="bUU-mX-T7O" secondAttribute="bottom" id="iZG-z3-RAE"/>
+                <constraint firstItem="bUU-mX-T7O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="neq-Rr-QTz"/>
+            </constraints>
+            <size key="customSize" width="440" height="91"/>
+            <connections>
+                <outlet property="titleLabel" destination="kpk-Lk-lEn" id="cCi-jw-ZqK"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="36.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_panicBuying" width="12" height="15"/>
+    </resources>
+</document>

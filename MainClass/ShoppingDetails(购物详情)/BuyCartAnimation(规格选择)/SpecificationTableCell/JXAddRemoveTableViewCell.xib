@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JXAddRemoveTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqx-Rn-SiX">
+                        <rect key="frame" x="15" y="0.0" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="Ose-IT-ody"/>
+                            <constraint firstAttribute="height" constant="23" id="rhh-iA-Cbn"/>
+                        </constraints>
+                        <state key="normal" image="icon_减"/>
+                        <connections>
+                            <action selector="reductionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aks-Nb-Kdx"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHN-wd-JGt">
+                        <rect key="frame" x="42" y="0.0" width="25" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="WIT-Y8-as6"/>
+                            <constraint firstAttribute="width" constant="25" id="d5Y-c7-8eu"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-cd-UK8">
+                        <rect key="frame" x="71" y="0.0" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="Fef-5E-3qC"/>
+                            <constraint firstAttribute="height" constant="23" id="Xrh-5Y-mHv"/>
+                        </constraints>
+                        <state key="normal" image="icon_加"/>
+                        <connections>
+                            <action selector="increaseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ikW-mf-CqL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eEI-cd-UK8" firstAttribute="leading" secondItem="tHN-wd-JGt" secondAttribute="trailing" constant="4" id="DNa-R6-l0Z"/>
+                    <constraint firstItem="tHN-wd-JGt" firstAttribute="leading" secondItem="Mqx-Rn-SiX" secondAttribute="trailing" constant="4" id="LZo-Gp-9aK"/>
+                    <constraint firstItem="tHN-wd-JGt" firstAttribute="centerY" secondItem="Mqx-Rn-SiX" secondAttribute="centerY" id="eQf-zv-D7n"/>
+                    <constraint firstItem="Mqx-Rn-SiX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lcA-lo-gLB"/>
+                    <constraint firstItem="eEI-cd-UK8" firstAttribute="centerY" secondItem="Mqx-Rn-SiX" secondAttribute="centerY" id="nFC-xY-q1K"/>
+                    <constraint firstItem="Mqx-Rn-SiX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="siJ-EE-yH6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodnumberTf" destination="tHN-wd-JGt" id="kVd-zX-RDf"/>
+                <outlet property="goodnumberWid" destination="d5Y-c7-8eu" id="FEg-Oy-gEb"/>
+                <outlet property="increasebt" destination="eEI-cd-UK8" id="zmr-4f-JsN"/>
+                <outlet property="reductionbt" destination="Mqx-Rn-SiX" id="E0i-DP-0B7"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="37"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_减" width="23" height="23"/>
+        <image name="icon_加" width="23" height="23"/>
+    </resources>
+</document>

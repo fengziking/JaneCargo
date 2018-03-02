@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JXInvoicingInvoiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCH-gv-oLn">
+                        <rect key="frame" x="15" y="15" width="35.5" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="9QA-mC-4zk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TzH-3x-M58">
+                        <rect key="frame" x="256" y="6.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="invoicingAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="hn2-8W-rdu"/>
+                        </connections>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QON-91-oMt">
+                        <rect key="frame" x="0.0" y="43" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="K0h-VY-FTE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PCH-gv-oLn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EfD-nr-bZk"/>
+                    <constraint firstItem="PCH-gv-oLn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="F4G-Da-Izb"/>
+                    <constraint firstAttribute="trailing" secondItem="TzH-3x-M58" secondAttribute="trailing" constant="15" id="Kb4-ac-IDJ"/>
+                    <constraint firstItem="QON-91-oMt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OgU-QZ-O5Z"/>
+                    <constraint firstAttribute="bottom" secondItem="QON-91-oMt" secondAttribute="bottom" id="i0p-yx-3dl"/>
+                    <constraint firstItem="TzH-3x-M58" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oBz-Rb-SfV"/>
+                    <constraint firstAttribute="trailing" secondItem="QON-91-oMt" secondAttribute="trailing" id="yBR-DQ-5hv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="invoicingLabel" destination="PCH-gv-oLn" id="GdP-ZH-rKk"/>
+                <outlet property="line" destination="QON-91-oMt" id="OLB-kj-0yR"/>
+                <outlet property="switchb" destination="TzH-3x-M58" id="cuL-Y0-AtI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

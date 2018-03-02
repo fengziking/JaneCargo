@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是新商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-tJ-XRq">
+                    <rect key="frame" x="119.5" y="17.5" width="82" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Rj9-GL-AgW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_adorn" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-Xr-bhN">
+                    <rect key="frame" x="92.5" y="18" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="NiH-ZB-WID"/>
+                        <constraint firstAttribute="width" constant="15" id="TwC-va-JVl"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_adorn" translatesAutoresizingMaskIntoConstraints="NO" id="S8W-4a-yjc">
+                    <rect key="frame" x="213.5" y="18" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="SIa-1q-G2m"/>
+                        <constraint firstAttribute="height" constant="15" id="cDj-Os-MH9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6Wu-tJ-XRq" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="P7H-gk-WZT"/>
+                <constraint firstItem="6Wu-tJ-XRq" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="a5X-6d-Djy"/>
+                <constraint firstItem="7ES-Xr-bhN" firstAttribute="centerY" secondItem="6Wu-tJ-XRq" secondAttribute="centerY" id="aVR-LO-laF"/>
+                <constraint firstItem="S8W-4a-yjc" firstAttribute="leading" secondItem="6Wu-tJ-XRq" secondAttribute="trailing" constant="12" id="hBG-0i-XwV"/>
+                <constraint firstItem="6Wu-tJ-XRq" firstAttribute="leading" secondItem="7ES-Xr-bhN" secondAttribute="trailing" constant="12" id="hEc-o2-i1E"/>
+                <constraint firstItem="S8W-4a-yjc" firstAttribute="centerY" secondItem="6Wu-tJ-XRq" secondAttribute="centerY" id="jJ2-9c-MYG"/>
+            </constraints>
+            <point key="canvasLocation" x="-143" y="17"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_adorn" width="15" height="15"/>
+    </resources>
+</document>
